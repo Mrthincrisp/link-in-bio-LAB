@@ -1,69 +1,69 @@
 
-body{
-  background-color: black;
+.background {
+  background-image: url(https://www.powerpyx.com/wp-content/uploads/zelda-tears-of-the-kingdom-wallpaper.jpg);
+  filter: blur(8px);  /* applies blur, modern application */
+  -webkit-filter: blur(8px); /* also applies blur, old method, may be required for older versions */
+  background-repeat: no-repeat; /* prevents BG image from repeating*/
+  background-size: cover; /* sets size of image, here 'zooms out' a bit */
+  position: fixed; /* alters image position, fixed prevents movement  */
+  background-position: center  center; /*helps fit entire image */
+  width: 100%;  /* x axis */
+  height: 100%; /* y axis */
+  z-index: -1;  /* z axis */
 }
 .body-cont {
   display: flex;
-  align-items: center; 
+  align-items: center; /* aligns the content of container body-cont  */
   flex-direction: column; 
-  padding: 20px;
-  color: aliceblue;
-  
+  padding: 20px;  
 }
 
 .card-img {
   position: relative;
-  left: 90px;
+  left: 90px;   /* settings to align card images */
   width: 150px;
 }
 .btn-cont{
-    width:350px;
+  width:350px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* settings to align buttons in page */
   align-items: center;
   margin: 10px;
 }
 .btn-primary{
-    width: 600px;
-  height: 50px;
-  margin: 10px;
+  width: 600px; /* button size  */
+  height: 50px; /* button size  */
+  margin: 10px; /* all round margin size */
   background-color: rgb(255, 225, 0)
   color(srgb red green blue);
 }
 .btn{
-  background-color: rgba(34, 34, 252, 0.998);
-  border-radius: 12px;
-  color: white;
-  font-weight: bold;
-  font-size: medium;
-  box-shadow: 0 6px #1f005c;
-  border: 0px;
-  opacity: 0.6;
+  background-color: rgba(34, 34, 252, 0.998); /* basic effect  */
+  border-radius: 12px; /* smoothes edges of button */
+  color: white; /* basic effect  */
+  font-weight: bold; /* basic effect  */
+  font-size: medium; /* basic effect  */
+  box-shadow: 0 6px #1f005c; /* adds a shadow */
+  border: 0px; /* removes border */
+  opacity: 0.6;  /* this and the next prep the button to enhance hover effects */
   transition: 0.2s;
 }
 .btn:hover{
-  opacity: 1;
-  color:black;
-  background-color: rgb(192, 195, 4);
+  opacity: 3;
+  color:black;  /* effecst take place when curser hovers over buttons */
+  background-color: rgb(226, 230, 4);
 }
 .btn:active{
-  background-color: goldenrod;
-  box-shadow: 0 5px #2e2e2e;
-  transform: translateY(4px);
+  background-color: rgb(230, 174, 35);
+  box-shadow: 0 5px #2e2e2e; /* these effects take place on click */
+  transform: translateY(4px); /* drops button 4px a 'pressed motion', this effect can stack with others like: rotate(90deg) */
 }
 .card-text{
-  display: flex;
+  display: flex;/* these two lines align the text 'these are my links' */
   justify-content: center;
 }
-.bit-link{
-  
-}
-.small-bit-link{
-  
-}
-
 .link-img{
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  /* positions the two Link, links beside eachother,  poor image choice, don't feel like image editing*/
   justify-content: space-evenly;
 }
